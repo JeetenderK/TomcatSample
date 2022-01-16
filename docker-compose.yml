@@ -1,7 +1,7 @@
 tomcat:
   image: test2
   ports:
-    - "8085:8080"
+    - "80:8080"
     - "443:8443"
   container_name: Mytomcat
   volumes:
