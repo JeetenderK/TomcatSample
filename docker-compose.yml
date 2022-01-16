@@ -1,8 +1,10 @@
-tomcat:
-  image: test2
-  ports:
-    - "80:8080"
-    - "443:8443"
-  container_name: Mytomcat
-  volumes:
-    - ./logs/:/usr/local/tomcat/logs/
+version: 3.8
+services:  
+  tomcat:
+    image: test2
+    ports:
+      - "80:8080"
+      - "443:8443"
+    container_name: Mytomcat
+    volumes:
+      - ./logs/:/usr/local/tomcat/logs/
